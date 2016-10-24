@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NYTQuest</string>
+    <string name="searchHint">Enter a search term</string>
+    <string name="search">Search</string>
+    <string name="tvPopularStories">Popular Stories</string>
+    <string-array name="sort_by_array">
+        <item>Newest</item>
+        <item>Oldest</item>
+    </string-array>
+</resources>
