@@ -9,7 +9,7 @@ import com.loopj.android.http.RequestParams;
  */
 public class TopStoriesClient {
 
-  protected static String API_KEY = "ef343a0d086f4555b39b6d5ff00a16fc";
+  protected static String API_KEY = "009a6551197a4fadba0adebabbc255f0";
 
   protected AsyncHttpClient mClient;
   protected RequestParams mQueryParams;

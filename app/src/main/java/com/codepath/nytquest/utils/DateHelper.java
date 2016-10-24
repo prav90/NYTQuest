@@ -10,7 +10,7 @@ import java.util.Calendar;
 public class DateHelper {
   public static final SimpleDateFormat FORMATTER =
   new SimpleDateFormat("yyyy-mm-dd");
-  public static final SimpleDateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy-mm-dd");
+  public static final SimpleDateFormat DATE_FORMATTER = new SimpleDateFormat("yyyy-MM-dd");
   public static final SimpleDateFormat TIME_FORMATTER = new SimpleDateFormat("h:mm a");
   public static Date getCurrentSQLDate() {
     java.util.Date utilDate = new java.util.Date();

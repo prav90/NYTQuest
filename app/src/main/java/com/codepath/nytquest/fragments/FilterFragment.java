@@ -90,7 +90,7 @@ public class FilterFragment extends DialogFragment implements DatePickerFragment
             public void onDateSet(
             DatePicker datePicker, int year, int month, int day) {
               etBeginDate.setText(DateHelper.getFormatteDate(
-              year, month, day)
+              year, month+1, day)
               );
             }
           }, year, month, day);
@@ -110,7 +110,7 @@ public class FilterFragment extends DialogFragment implements DatePickerFragment
             public void onDateSet(
             DatePicker datePicker, int year, int month, int day) {
               etEndDate.setText(DateHelper.getFormatteDate(
-              year, month, day)
+              year, month+1, day)
               );
             }
           }, year, month, day);

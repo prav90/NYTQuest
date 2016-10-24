@@ -1,6 +1,7 @@
 package com.codepath.nytquest.activities;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -79,7 +80,14 @@ public class SearchActivity
       public void onLoadMore(int page, int totalItemsCount) {
         if (mFilter.searchQuery.trim().length() > 0 && page <= MAX_PAGES) {
           mFilter.page += 1;
-          getSearchResults();
+          Handler handler = new Handler();
+          Runnable runnableCode = new Runnable() {
+            @Override
+            public void run() {
+              getSearchResults();
+            }
+          };
+          handler.postDelayed(runnableCode, 1000);
         }
       }
     });
@@ -183,6 +191,13 @@ public class SearchActivity
   public void onFilter() {
     clearSearchResults();
     mFilter.page = 0;
-    getSearchResults();
+    Handler handler = new Handler();
+    Runnable runnableCode = new Runnable() {
+      @Override
+      public void run() {
+        getSearchResults();
+      }
+    };
+    handler.postDelayed(runnableCode, 2000);
   }
 }
